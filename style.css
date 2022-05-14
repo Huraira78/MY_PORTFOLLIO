@@ -1,0 +1,509 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Black Ops One', cursive;     
+    letter-spacing: 1px;               
+    /* overflow-x: hidden; */
+}
+.mainContainer{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgb(124, 118, 118),rgb(0, 0, 0));
+    display: flex;
+    border: 1px solid black;
+    position: relatives;
+    overflow-x: hidden;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    background-color: black;
+    width: 20%;
+    position: fixed;
+    left: 0;
+    height: 100vh;
+}
+.nav .image{
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    background-color: gray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav .miniNav .name{
+    color:  rgb(189, 184, 184);
+    text-align: center;
+    margin-top: 1rem;
+}
+.nav .image img{
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+}
+.nav .opt{
+    /* border: 1px solid white; */
+    height: 50%;
+}
+.nav .opt li{
+    list-style: none;
+    margin: 1.5rem;
+}
+.nav .opt li a{
+    text-decoration: none;
+    color: rgb(189, 184, 184);
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.discription{
+    /* color: black; */
+    position: absolute;
+    top: 50%;
+    left: 35%;
+}
+#skill{
+    color: red;
+}
+.discription h1{
+    font-size: 4rem;
+    animation: animate 3s;
+    overflow: hidden;
+    white-space: nowrap;
+    /* animation-direction: forward; */
+}
+@keyframes animate{
+    0%{
+        width: 0vw;
+    }
+    100%
+    {
+        width:37vw;
+    }
+}
+.secondContainer{
+transform: translateX(30%);
+/* border: 1px solid black; */
+width: 75vw;
+/* overflow-x: hidden; */
+}
+.secondContainer .about{
+    width: 80%;
+    /* overflow-x: hidden; */
+    /* border: 1px solid black; */
+    margin-top: 1rem;
+}
+.secondContainer .about h1{
+text-shadow: 0px 6px 10px rgba(0,0,0,1);
+font-size: 4rem;
+letter-spacing: 3px;
+/* overflow-x: hidden; */
+}
+.secondContainer .aboutpara{
+background-color: lightgrey;
+/* border: 1px solid black; */
+margin-top: 1rem;
+margin-left: 3rem;
+border-radius: 10px;
+box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.568);
+height: 35vh;
+width: 70%;
+}
+.secondContainer .aboutpara p{
+    line-height: 30px;
+    padding-top: 1rem;
+    padding-left: .5rem;
+    text-align:left;
+    font-size: 1.2rem;
+}
+.secondContainer .moreabout
+{
+    background-color: lightgrey;
+    /* border: 1px solid black; */
+    margin-top: 1rem;
+    margin-left: 3rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.568);
+    height: 30vh;
+    width: 70%;
+    }
+.secondContainer .moreabout h3 
+{
+        text-align: center;
+        padding: .5rem;
+}
+ .secondContainer .moreabout p
+    {
+        line-height: 30px;
+        padding-left: .5rem;
+        text-align:left;
+        font-size: 1.2rem;
+    }
+.secondContainer .personal p{
+    margin-top: 1rem;
+    opacity: .7;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.secondContainer .personal ol{
+    list-style-type:disc;
+margin-left:4rem;
+margin-top: .5rem;
+font-size: 1.2rem;
+}
+.secondContainer .personal ol li span{
+    margin-left:.5rem;
+    color: rgb(143, 105, 105);
+    text-align: center;
+}
+.secondContainer .education h1{
+    text-shadow: 0px 6px 10px rgba(0,0,0,1);
+    font-size: 4rem;
+    letter-spacing: 3px;
+    margin-top: 1rem;
+}
+.education .eduBlock{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-left: 1.3rem;
+}
+.education .eduBlock .edu{
+  border-right:2px solid rgba(129, 123, 123, 0.726);
+  border-left:2px solid rgba(129, 123, 123, 0.726);
+  box-shadow: 0px 0px 10px  rgba(34, 33, 33, 0.808);
+    height: 30vh;
+    width: 30vw;
+    margin: 1rem;
+  border-radius: 10px;
+    padding: 1rem;
+    letter-spacing: 2px;
+text-align: center;
+font-size: 1.5rem;
+}
+.education .eduBlock .edu span{
+    margin-left:.5rem;
+    color: rgb(143, 105, 105);
+    text-align: center;
+}
+.education .eduBlock .edu .marks p{
+    font-size: 2rem;
+}
+.education .eduBlock .edu .marks .markPercent{
+    border: 1px solid black;
+    height: 4vh;
+    margin-top: .5rem;
+    border-radius: 13px;
+border: 4px solid rgba(143, 105, 105, 0.678);
+}
+.education .eduBlock .edu .marks #matricMarks{
+    width: 77%;
+    border-radius: 10px;
+    height: 100%;
+    animation: marks 3s infinite;
+    animation-direction: forward;
+    background-color: rgba(143, 105, 105, 0.678);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes marks {
+  0%{
+      width: 0vw;
+  }
+  100%{
+      width: 77%;
+  }
+
+}
+.education .eduBlock .edu .marks #fscMarks{
+    width: 84%;
+    border-radius: 10px;
+    height: 100%;
+    animation: marks 3s infinite;
+    animation-direction: forward;
+    background-color: rgba(143, 105, 105, 0.678);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes marks {
+  0%{
+      width: 0vw;
+  }
+  100%{
+      width: 84%;
+  }
+
+}
+.education .eduBlock .edu .marks #uniMarks{
+    width: 87%;
+    border-radius: 10px;
+    height: 100%;
+    animation: marks 3s infinite;
+    animation-direction: forward;
+    background-color: rgba(143, 105, 105, 0.678);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes marks {
+  0%{
+      width: 0vw;
+  }
+  100%{
+      width: 87%;
+  }
+
+}
+.secondContainer .skills h1{
+    text-shadow: 0px 6px 10px rgba(0,0,0,1);
+    font-size: 4rem;
+    letter-spacing: 3px;
+    margin-top: 1rem;
+}
+.skills .topskill{
+    border-right:2px solid rgba(129, 123, 123, 0.726);
+    border-left:2px solid rgba(129, 123, 123, 0.726);
+    box-shadow: 0px 0px 10px  rgba(34, 33, 33, 0.808);
+    height: 80vh;
+    /* width: 60vw; */
+    margin-top: 1rem;
+    margin-left: 1.3rem;
+    border-radius: 12px;
+    font-size: 2rem;
+    text-align: center;
+    padding: .5rem;
+}
+.skills .topskill .images img{
+    height: 200px;
+    width: 200px;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 1rem;
+}
+.skills .topskill .images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.secondContainer .abilities p{
+    margin-top: 1rem;
+    opacity: .7;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.secondContainer .abilities .ability{
+    border-right:2px solid rgba(129, 123, 123, 0.726);
+    border-left:2px solid rgba(129, 123, 123, 0.726);
+    box-shadow: 0px 0px 10px  rgba(34, 33, 33, 0.808);
+    height: 40vh;
+    width: 50vw;
+    margin-top: 1rem;
+    margin-left:1rem;
+    border-radius: 10px;
+}
+.secondContainer .abilities .ability ol{
+list-style-type: disc;
+/* text-align: center; */
+padding-top: 1rem;
+margin-left: 2rem;
+font-size: 1.3rem;
+}
+.secondContainer .abilities .ability p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    opacity: .7;
+    margin-left: .5rem;
+}
+.projectSection h1{
+    text-shadow: 0px 6px 10px rgba(0,0,0,1);
+    font-size: 4rem;
+    letter-spacing: 3px;
+    margin-top: 1rem;
+}
+.projectSection .projects{
+    margin-left: 1.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    margin: 1rem;
+}
+.projectSection .projects .project1 img{
+    height: 250px;
+    width: 250px;
+    border: 2px solid rgba(0, 0, 0, 0.733);
+    box-shadow: 0px 0px 4px 4px  rgba(34, 33, 33, 0.5);
+    border-radius: 10px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.projectSection .projects .project1 p{
+    font-size: 1.5rem;
+    opacity: 0.7;
+    margin-top: 0;
+    /* margin-left: 3rem; */
+}
+.projectSection .projects .project1 .proPara{
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    opacity: 1;
+    width: 300px;
+    font-weight: 300;
+}
+.projectSection .projects .project2 img{
+    height: 250px;
+    width: 600px;
+    border: 2px solid rgba(0, 0, 0, 0.733);
+    box-shadow: 0px 0px 4px 4px  rgba(34, 33, 33, 0.5);
+    border-radius: 10px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.projectSection .projects .project2 p{
+    font-size: 1.5rem;
+    opacity: 0.7;
+    margin-top: 0;
+    /* margin-left: 3rem; */
+}
+.projectSection .projects .project2 .proPara{
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    opacity: 1;
+    width: 300px;
+    font-weight: 300;
+}
+.projectSection .projects .project3 img{
+    height: 250px;
+    width: 600px;
+    border: 2px solid rgba(0, 0, 0, 0.733);
+    box-shadow: 0px 0px 4px 4px  rgba(34, 33, 33, 0.5);
+    border-radius: 10px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.projectSection .projects .project3 p{
+    font-size: 1.5rem;
+    opacity: 0.7;
+    margin-top: 0;
+    /* margin-left: 3rem; */
+}
+.projectSection .projects .project3 .proPara{
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    opacity: 1;
+    width: 300px;
+    font-weight: 300;
+}
+.projectSection .projects summary details{
+    width: 300px;
+    opacity: .8;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.contact p{
+    font-size: 2rem;
+    opacity: 0.9;
+    text-align: center;
+}
+.contact .contactInfo{
+    height: 60vh;
+    width: 40vw;
+    border-radius: 10px;
+    margin-top: 1rem;
+    border-right:2px solid rgba(129, 123, 123, 0.726);
+    border-left:2px solid rgba(129, 123, 123, 0.726);
+    box-shadow: 0px 0px 10px  rgba(34, 33, 33, 0.808);
+}
+.contact .contactInfo input{
+    margin-top: 1rem;
+    width: 80%;
+    border: 2px solid blue;
+    border-radius: 7px;
+    height: 4vh;
+    text-align: center;
+}
+.input1{
+    transform: translateX(25px);
+    margin: .5rem;
+    /* margin-inline: .5rem; */
+}
+#message{
+    height: 30vh;
+    transform: translateX(25px);
+}
+#submit:hover{
+    transition:All .5s ease-in-out;
+    box-shadow: 0px 0px 4px 4px  rgba(52, 55, 211, 0.808);
+    border: none;
+}
+.input11 button{
+    cursor: pointer;
+    padding: .3rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 8vw;
+    border: 2px solid blue;
+}
+.input11{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+}
+footer{
+background-color: black;
+width: 79.5vw;
+height: 12vh;
+transform: translateX(-4%);
+/* margin-bottom: .5rem; */
+}
+footer .social{
+    font-size: 2.5rem;
+    /* margin: 1rem; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+footer .social i{
+    margin-top: .5rem;
+    margin-inline: 1rem;
+}
+.openBar{
+    width:7vw;
+    border: 1px solid yellow;
+    color:  rgb(189, 184, 184);
+    font-size: 2rem;
+    /* cursor: pointer; */
+    height: 5vh;
+}
+.openBar i{
+    color:  rgb(189, 184, 184);
+    font-size: 2rem;
+    cursor: pointer;
+    width:7vw;
+    text-align: center;
+    border: 1px solid white;
+}
+.miniNav .opt li a i{
+    color:  rgb(189, 184, 184);
+    font-size: 1rem;
+    cursor: pointer;
+}
